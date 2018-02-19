@@ -33,11 +33,3 @@ a {
 a:hover {
   background:rgba(0,0,0,0.4);
 }
-
-
-.slider-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; 
-}
-
