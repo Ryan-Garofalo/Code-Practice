@@ -5,5 +5,5 @@ export default function(state = false, action) {
         case CHANGE_AUTH:
             return action.payload;
     }
-	return state
+	return state;
 }
