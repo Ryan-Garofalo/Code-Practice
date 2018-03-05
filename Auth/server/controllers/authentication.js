@@ -8,6 +8,16 @@ function tokenForUser(user) {
     return jwt.encode({ sub: user.id, iat: timestamp }, config.secret);
 }
 
+exports.signin = function (req, res , next){
+    //user has already had their email and password auth's
+    // We just need to give them a token
+
+    res.send({token : tokenForUser(req.user)});
+}
+
+
+
+
 exports.signup = function(req, res, next) {
     // console.log(req.body);
 
@@ -53,7 +63,7 @@ exports.signup = function(req, res, next) {
                 return nex(err);
             }
             // Respond to request indicating the user was created
-            res.json({ token: tokenForUser(user)});
+            res.json({ token: tokenForUser(user) });
         });
     });
 };
