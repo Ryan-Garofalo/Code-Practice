@@ -1,13 +1,18 @@
 # Code-Practice
 
-This is a repo of the technologies I'm practicing and learning.
+This is a repo of the technologies I'm learning and working on mastering!
 
-## Some Of The technologies you will see used include:
 
-*ES6
-*MongoDB
-*NodeJS
-*React
-*Express
+## Some of The technologies you will see used include:
+
+* ES6
+* MongoDB
+* NodeJS
+* React
+* Express
+* Less
 
 ## Here are some of the technologies I hope to learn
+
+* React Native
+* Swift
