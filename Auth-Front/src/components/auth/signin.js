@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 
 class SignIn extends Component {
     onSubmit({ email, password }) {
-        console.log(email);
-        console.log(password);
         this.props.signinUser({email,password})
     }
 

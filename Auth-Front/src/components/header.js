@@ -4,7 +4,6 @@ import { Link } from "react-router";
 
 class Header extends Component {
     renderLinks() {
-		console.log(this.props.authnticated);
         if (this.props.authenticated) {
             return (
                 <li className="nav-item">
