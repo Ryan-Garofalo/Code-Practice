@@ -38,7 +38,6 @@ export function signUpUser({ email, password }) {
 }
 
 export function authError(error) {
-    console.log("fire");
     return {
         type: AUTH_ERROR,
         payload: error
