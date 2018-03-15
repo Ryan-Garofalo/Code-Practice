@@ -16,6 +16,8 @@ class SignUp extends Component {
 
   handleFormSubmit({email, password }) {
     // Sign user up
+    console.log(email);
+    console.log(password);
     this.props.signUpUser({ email, password })
   }
 

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { browserHistory } from "react-router";
-import { AUTH_USER, AUTH_ERROR, UNAUTH_USER } from "./types";
+import { AUTH_USER, AUTH_ERROR, UNAUTH_USER, SIGNUP_USER } from "./types";
 
 const ROOT_URL = "http://localhost:3090";
 
@@ -24,6 +24,12 @@ export function signinUser({ email, password }) {
                 dispatch(authError("Bad"));
             });
     };
+}
+
+export function signUpUser({email,password}){
+    return function(dispatch){
+        axios.post(`${ROOT_URL}/signup`,{email,password})
+    }
 }
 
 export function authError(error) {
