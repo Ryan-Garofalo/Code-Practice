@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // App Setup
+// start command npm run dev
 
 mongoose.connect('mongodb://localhost:27017/auth');
 
